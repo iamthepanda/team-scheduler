@@ -1,7 +1,7 @@
 <?php 
 
     $jqueryDataVariable = $_POST['stringDataVariable'];
-    echo $jqueryDataVariable;
+//    echo $jqueryDataVariable;
 
     $jqueryRowVariable = $_POST['stringRowVariable'];
 //    echo $jqueryRowVariable;
