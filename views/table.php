@@ -1,6 +1,6 @@
 <table class="table-bordered" border="1">
-    <tr>
-        <th style="width: 50px"></th>
+    <tr id="headers">
+        <th style="width: 72px"></th>
         <?php 
         for($i = 0; $i<7; $i++) {
             echo "<th style=\"width: 72px; padding-top:20px\">";
@@ -17,10 +17,10 @@
     while($row = mysqli_fetch_array($results)) {
         echo "<tr>";
 
-            echo "<td style=\"height:20px; text-align:right; padding-right: 5px\">" . hours($j) ."</td>";
+            echo "<td id=\"slots\" style=\"text-align:right; padding-right: 5px\">" . hours($j) ."</td>";
 
             for($i = 0; $i<7; $i++) {
-                echo "<td style=\"height:20px\">";
+                echo "<td class=\"slot\" style=\"\">";
                 echo "<button class=\"editbtn_row". $j. "_col" . $i . "\" title=\"". $headers[($i+1)] . " " . $j . ":00\">" . $row[$i] . "</button>";
 
                 echo "</td>";

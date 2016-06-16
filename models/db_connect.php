@@ -1,5 +1,5 @@
 <?php
-include("../../metadata/db_credentials.php");
+include("../metadata/db_credentials.php");
 
 $currentTable = "main_table";
 
